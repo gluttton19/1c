@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<querylist>
+	<query name="ОказаниеУслугСписокНоменклатуры">
+		<text>ВЫБРАТЬ
+	ЦеныНоменклатурыСрезПоследних.Период КАК Период,
+	ЦеныНоменклатурыСрезПоследних.Номенклатура КАК Номенклатура,
+	ЦеныНоменклатурыСрезПоследних.Цена КАК Цена
+ИЗ
+	РегистрСведений.ЦеныНоменклатуры.СрезПоследних(&amp;Дата, Номенклатура = &amp;Номенклатура) КАК ЦеныНоменклатурыСрезПоследних
+</text>
+		<textSQL>
+
+		</textSQL>
+		<planSQL>
+
+		</planSQL>
+		<typeSQL>
+
+		</typeSQL>
+		<parameters>
+			<parameter name="Ссылка" type="DocumentRef.ОказаниеУслуг" value="5211171d-2b8a-11f1-992f-b060889e324c"/>
+			<parameter name="Дата" type="Дата" value="2026-03-29T00:00:00"/>
+			<parameter name="Номенклатура" type="CatalogRef.Номенклатура" value="37ec792e-2b6e-11f1-992e-ec6a2f8dfb1b"/>
+		</parameters>
+	</query>
+</querylist>
